@@ -54,6 +54,7 @@ loop do
   end
 
   puts "OT: %0.2f, Lunch: %s, Dinner: %s" % [OT, lunch, dinner]
+  
   break
 end
 
