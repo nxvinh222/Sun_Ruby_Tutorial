@@ -9,13 +9,13 @@ def date_is_valid(string_time)
       end
     end
   end
-  puts 'Format sai, nhap lai theo dung format hh:mm'
+  puts 'Format sai, nhap lai!'
   return false
 end
 
 
 loop do
-  puts 'Nhap gio bat dau:'
+  puts 'Nhap gio bat dau(hh:mm):'
   checkin_time = gets.chomp
   loop do
     break if date_is_valid(checkin_time)
@@ -23,7 +23,7 @@ loop do
   end
   checkin_time_minute = Time.parse(checkin_time)
 
-  puts 'Nhap gio ket thuc:'
+  puts 'Nhap gio ket thuc(hh:mm):'
   checkout_time = gets.chomp
   loop do
     break if date_is_valid(checkout_time)
@@ -54,7 +54,7 @@ loop do
   end
 
   puts "OT: %0.2f, Lunch: %s, Dinner: %s" % [OT, lunch, dinner]
-  
+
   break
 end
 
